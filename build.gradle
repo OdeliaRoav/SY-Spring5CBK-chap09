@@ -36,7 +36,10 @@ dependencies {
 
 	// JSTL (JSP에서 <c:forEach> 등의 태그 사용 가능)
 // https://mvnrepository.com/artifact/javax.servlet/jstl
-	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+//	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+	// https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api
+	implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.2'
 
 	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '9.2.0'
