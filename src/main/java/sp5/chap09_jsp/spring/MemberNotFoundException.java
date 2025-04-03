@@ -1,4 +1,4 @@
-package com.example.sp5_chap08.spring;
+package sp5.chap09_jsp.spring;
 
 public class MemberNotFoundException extends RuntimeException {
 }

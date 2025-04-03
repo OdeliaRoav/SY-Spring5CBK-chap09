@@ -40,6 +40,12 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '9.2.0'
+
+	// https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+	implementation group: 'org.springframework', name: 'spring-jdbc', version: '7.0.0-M3'
+
+	// https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc
+	implementation group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '11.0.5'
 }
 
 tasks.named('test') {
