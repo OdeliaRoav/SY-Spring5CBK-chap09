@@ -10,7 +10,6 @@ import sp5.chap09_jsp.spring.ChangePasswordService;
 import sp5.chap09_jsp.spring.MemberDao;
 import sp5.chap09_jsp.spring.MemberRegisterService;
 
-
 @Configuration
 @EnableTransactionManagement
 public class MemberConfig {
