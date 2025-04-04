@@ -1,5 +1,6 @@
 package sp5.chap09_jsp.controller;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -28,4 +29,10 @@ public class MainController {
     public String hello() {
         return "hello";
     }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("🔥 MainController 등록됨!");
+    }
+
 }
