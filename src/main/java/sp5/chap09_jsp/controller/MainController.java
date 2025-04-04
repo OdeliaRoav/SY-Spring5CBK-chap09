@@ -6,8 +6,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
+    // 기존: /main 요청 → main.jsp
     @RequestMapping("/main")
     public String main() {
         return "main";
+    }
+
+    // 추가: / 요청 → main.jsp
+    @RequestMapping("/")
+    public String root() {
+        return "main";
+    }
+
+    // 추가: /hello 요청 → hello.jsp
+    @RequestMapping("/hello")
+    public String hello() {
+        return "hello";
     }
 }
