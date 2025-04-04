@@ -12,6 +12,11 @@ public class MainController {
         return "main";
     }
 
+    @RequestMapping("/")
+    public String home() {
+        return "main";  // /WEB-INF/views/main.jsp 로 연결됨
+    }
+
     // 추가: / 요청 → main.jsp
     @RequestMapping("/")
     public String root() {
