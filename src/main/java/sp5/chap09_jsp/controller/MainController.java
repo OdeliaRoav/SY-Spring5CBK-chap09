@@ -7,32 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
-    // 기존: /main 요청 → main.jsp
     @RequestMapping("/main")
     public String main() {
-        return "main";
+        return "main"; // /WEB-INF/views/main.jsp 로 이동
     }
 
-    @RequestMapping("/")
-    public String home() {
-        return "main";  // /WEB-INF/views/main.jsp 로 연결됨
-    }
-
-    // 추가: / 요청 → main.jsp
     @RequestMapping("/")
     public String root() {
-        return "main";
+        return "main"; // 루트 접근도 main.jsp 로 이동
     }
 
-    // 추가: /hello 요청 → hello.jsp
     @RequestMapping("/hello")
     public String hello() {
         return "hello";
     }
-
-    @PostConstruct
-    public void init() {
-        System.out.println("🔥 MainController 등록됨!");
-    }
-
 }
